@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones_spinner">
+        <item>Socio</item>
+        <item>Abonado</item>
+        <item>Aficionado</item>
+        <item>Simpatizante</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>

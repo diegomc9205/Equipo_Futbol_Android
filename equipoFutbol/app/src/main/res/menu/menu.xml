@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentBienvenido"
+        android:icon="@drawable/home"
+
+        android:title="Home" />
+    <item android:title="Equipo">
+        <menu android:checkableBehavior="single">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragmentEquipo"
+                    android:icon="@drawable/balon"
+                    android:title="Equipo" />
+                <item
+                    android:id="@+id/fragmentGaleria"
+                    android:icon="@drawable/image"
+                    android:title="Galeria" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Acerca de">
+        <menu android:checkableBehavior="single">
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragmentContacto"
+                    android:icon="@drawable/contacto"
+                    android:title="Contacto" />
+
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

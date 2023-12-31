@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentBienvenido">
+
+    <fragment
+        android:id="@+id/fragmentBienvenido"
+        android:name="com.example.equipofutbol.FragmentBienvenido"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_bienvenido" />
+    <fragment
+        android:id="@+id/fragmentContacto"
+        android:name="com.example.equipofutbol.FragmentContacto"
+        android:label="Contacto"
+        tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/fragmentEquipo"
+        android:name="com.example.equipofutbol.FragmentEquipo"
+        android:label="Equipo"
+        tools:layout="@layout/fragment_equipo">
+        <action
+            android:id="@+id/action_fragmentEquipo_to_fragmentInfoJugador"
+            app:destination="@id/fragmentInfoJugador" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGaleria"
+        android:name="com.example.equipofutbol.FragmentGaleria"
+        android:label="Galeria"
+        tools:layout="@layout/fragment_galeria">
+        <action
+            android:id="@+id/action_fragmentGaleria_to_fragmentGaleriaGrande"
+            app:destination="@id/fragmentGaleriaGrande" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGaleriaGrande"
+        android:name="com.example.equipofutbol.FragmentGaleriaGrande"
+        android:label="Imagen"
+        tools:layout="@layout/fragment_galeria_grande" />
+    <fragment
+        android:id="@+id/fragmentInfoJugador"
+        android:name="com.example.equipofutbol.FragmentInfoJugador"
+        android:label="Info Jugador"
+        tools:layout="@layout/fragment_info_jugador" />
+</navigation>
